@@ -9,11 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^22.9.0",
     "typescript": "^5.5.3",
-    "vite": "^5.4.8",
-    "@types/node": "^22.9.0"
-  },
-  "dependencies": {
-    "vite-plugin-vercel": "^9.0.3"
+    "vite": "^5.4.8"
   }
 }

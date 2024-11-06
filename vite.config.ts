@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite';
-import vercel from 'vite-plugin-vercel';
  
 export default defineConfig({
- root: 'src',
+    root: 'src',
   server: {
     port: process.env.PORT as unknown as number,
   },
-  plugins: [vercel()],
+  publicDir: '../public',
+  build: {
+    outDir: '../dist',
+    assetsInlineLimit: 0,
+    emptyOutDir: true
+  }
 });
